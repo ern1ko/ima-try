@@ -5,7 +5,11 @@
   <title>🚀 Space Weather Quiz</title>
   <style>
     body {
-      background: radial-gradient(circle at top, #00111a, #000000);
+      /* 🌌 Фон с градиентом и космической картинкой */
+      background: 
+        radial-gradient(circle at top, rgba(0,17,26,0.8), rgba(0,0,0,0.9)),
+        url('space-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       text-align: center;
       font-family: Arial, sans-serif;
@@ -244,7 +248,6 @@
       </a>`;
     }
 
-    // создать деления на линии
     function createTicks() {
       const container = document.getElementById("progress-container");
       for (let i = 0; i <= 100; i += 10) {
@@ -266,4 +269,3 @@
   </script>
 </body>
 </html>
-
